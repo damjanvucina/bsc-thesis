@@ -49,7 +49,7 @@ you may use the <em>serve</em>  Artisan command. This command will start a devel
 
 ## Author
 
-* **Damjan Vučina**
+* [*Damjan Vučina* ](http://www.wampserver.com/en/download-wampserver-64bits/)
 
 ## License
 
