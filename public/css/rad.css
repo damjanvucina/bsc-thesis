@@ -1,0 +1,574 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+body {
+    padding-top: 0rem;
+    padding-bottom: 3rem;
+    color: #5a5a5a;
+    font-family: 'Raleway', sans-serif;
+}
+
+.blueContainer{
+    background-color: rgba(137,169,188,0.43);
+}
+
+.jumbotron{
+    /* add bootstrap jumbotron background image */
+    /*background: url("images/banner.jpg");*/
+    /* change bootstrap jumbotron text color */
+    color: #FFF;
+    background-color: rgba(137,169,188,0.24)
+}
+
+.navbar {
+    margin-bottom: 0;
+}
+
+.navbar-brand {
+    font-family: Jokerman;
+    font-size: 25px;
+}
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+    margin-bottom: 4rem;
+}
+
+.homepageHeadings {
+    color: #262626;
+
+}
+
+.homepageDescriptions {
+    color: #262626;
+
+}
+
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+    z-index: 10;
+    bottom: 3rem;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
+    height: 32rem;
+    background-color: #777;
+}
+
+.carousel-item > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 32rem;
+}
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.marketing h2 {
+    font-weight: normal;
+}
+
+.marketing .col-lg-4 p {
+    margin-right: .75rem;
+    margin-left: .75rem;
+}
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+    margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -.05rem;
+}
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 40em) {
+    /* Bump up size of carousel content */
+    .carousel-caption p {
+        margin-bottom: 1.25rem;
+        font-size: 1.25rem;
+        line-height: 1.4;
+    }
+
+    .featurette-heading {
+        font-size: 50px;
+    }
+}
+
+@media (min-width: 62em) {
+    .featurette-heading {
+        margin-top: 7rem;
+    }
+}
+
+/***** Top content *****/
+
+.top-content {
+    padding: 120px 0 130px 0;
+    background-image: url("/pictures/1.png");
+    background-size: 2300px 1200px;
+    background-repeat:no-repeat;
+
+}
+
+.job-content {
+    padding: 120px 0 130px 0;
+    background-repeat:no-repeat;
+    background-color: rgba(78,100,188,0.24);
+    background-image: url("/pictures/17.png");
+    background-size: 2600px 1200px;
+
+}
+
+.top-content .text {
+    padding-top: 120px;
+    color: #fff;
+}
+
+.top-content .text h1 {
+    color: #fff;
+}
+
+.top-content .description {
+    margin: 20px 0 30px 0;
+}
+
+.top-content .description p {
+    opacity: 0.8;
+}
+
+.r-form-1-top {
+    overflow: hidden;
+    padding: 0 25px 15px 25px;
+    background: #444;
+    background: rgba(0, 0, 0, 0.35);
+    text-align: left;
+    -moz-border-radius: 4px 4px 0 0;
+    -webkit-border-radius: 4px 4px 0 0;
+    border-radius: 4px 4px 0 0;
+}
+
+.r-form-1-top-left {
+    float: left;
+    width: 75%;
+    padding-top: 25px;
+}
+
+.r-form-1-top-left h3 {
+    margin-top: 0;
+    color: #fff;
+}
+
+.r-form-1-top-left p {
+    opacity: 0.8;
+    color: #fff;
+}
+
+.r-form-1-top-right {
+    float: left;
+    width: 25%;
+    padding-top: 5px;
+    font-size: 66px;
+    color: #fff;
+    line-height: 100px;
+    text-align: right;
+    opacity: 0.3;
+}
+
+.r-form-1-bottom {
+    padding: 25px;
+    background: #444;
+    background: rgba(0, 0, 0, 0.3);
+    text-align: left;
+    -moz-border-radius: 0 0 4px 4px;
+    -webkit-border-radius: 0 0 4px 4px;
+    border-radius: 0 0 4px 4px;
+}
+
+.r-form-1-bottom .terms {
+    margin: 15px 0 0 0;
+    opacity: 0.8;
+    color: #fff;
+    text-align: center;
+}
+
+.r-form-1-bottom .terms a:hover,
+.r-form-1-bottom .terms a:focus {
+    outline: 0;
+    border-bottom: 1px dotted #e38f42;
+}
+
+.r-form-1-box input[type="text"],
+.r-form-1-box textarea,
+.r-form-1-box textarea.form-control {
+    height: 50px;
+    margin: 0;
+    padding: 0 20px;
+    vertical-align: middle;
+    background: #fff;
+    border: 3px solid #fff;
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 50px;
+    color: #888;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -o-transition: all .3s;
+    -moz-transition: all .3s;
+    -webkit-transition: all .3s;
+    -ms-transition: all .3s;
+    transition: all .3s;
+}
+
+.r-form-1-box textarea,
+.r-form-1-box textarea.form-control {
+    height: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 30px;
+}
+
+.r-form-1-box input[type="text"]:focus,
+.r-form-1-box textarea:focus,
+.r-form-1-box textarea.form-control:focus {
+    outline: 0;
+    background: #fff;
+    border: 3px solid #e38f42;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.r-form-1-box input[type="text"]::-moz-placeholder,
+.r-form-1-box textarea::-moz-placeholder,
+.r-form-1-box textarea.form-control::-moz-placeholder {
+    color: #888;
+}
+
+.r-form-1-box input[type="text"]:-ms-input-placeholder,
+.r-form-1-box textarea:-ms-input-placeholder,
+.r-form-1-box textarea.form-control:-ms-input-placeholder {
+    color: #888;
+}
+
+.r-form-1-box input[type="text"]::-webkit-input-placeholder,
+.r-form-1-box textarea::-webkit-input-placeholder,
+.r-form-1-box textarea.form-control::-webkit-input-placeholder {
+    color: #888;
+}
+
+.dodajGumb{
+    width: 100%;
+    height: 50px;
+    margin: 0;
+    padding: 0 20px;
+    vertical-align: middle;
+    background: #e38f42;
+    border: 0;
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 50px;
+    color: #fff;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    text-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -o-transition: all .3s;
+    -moz-transition: all .3s;
+    -webkit-transition: all .3s;
+    -ms-transition: all .3s;
+    transition: all .3s;
+}
+
+.dodajGumb:hover{
+    opacity: 0.6;
+    color: #fff;
+}
+
+.r-form-1-box button.btn {
+    width: 100%;
+    height: 50px;
+    margin: 0;
+    padding: 0 20px;
+    vertical-align: middle;
+    background: #e38f42;
+    border: 0;
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 50px;
+    color: #fff;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    text-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -o-transition: all .3s;
+    -moz-transition: all .3s;
+    -webkit-transition: all .3s;
+    -ms-transition: all .3s;
+    transition: all .3s;
+}
+
+.r-form-1-box button.btn:hover {
+    opacity: 0.6;
+    color: #fff;
+}
+
+.r-form-1-box button.btn:active {
+    outline: 0;
+    opacity: 0.6;
+    color: #fff;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.r-form-1-box button.btn:focus {
+    outline: 0;
+    opacity: 0.6;
+    background: #e38f42;
+    color: #fff;
+}
+
+.r-form-1-box button.btn:active:focus, .r-form-1-box button.btn.active:focus {
+    outline: 0;
+    opacity: 0.6;
+    background: #e38f42;
+    color: #fff;
+}
+
+/* ispod kopiran css za blog*/
+
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    color: #333;
+}
+
+/*
+ * Override Bootstrap's default container.
+ */
+
+.container {
+    max-width: 60rem;
+}
+
+/*
+ * Masthead for nav
+ */
+
+.blog-masthead {
+    margin-bottom: 3rem;
+    background-color: #428bca;
+    box-shadow: inset 0 -0.1rem 0.25rem rgba(0, 0, 0, 0.1);
+}
+
+/* Nav links */
+
+.nav-link {
+    position: relative;
+    padding: 1rem;
+    font-weight: 500;
+    color: #cdddeb;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    color: #fff;
+    background-color: transparent;
+}
+
+/* Active state gets a caret at the bottom */
+
+.nav-link.active {
+    color: #fff;
+}
+
+.nav-link.active:after {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 0;
+    margin-left: -.3rem;
+    vertical-align: middle;
+    content: "";
+    border-right: .3rem solid transparent;
+    border-bottom: .3rem solid;
+    border-left: .3rem solid transparent;
+}
+
+/*
+ * Blog name and description
+ */
+
+.blog-header {
+    padding-bottom: 1.25rem;
+    margin-bottom: 2rem;
+    border-bottom: .05rem solid #eee;
+}
+
+.blog-title {
+    margin-bottom: 0;
+    font-size: 2rem;
+    font-weight: normal;
+}
+
+.blog-description {
+    font-size: 1.1rem;
+    color: #999;
+}
+
+@media (min-width: 40em) {
+    .blog-title {
+        font-size: 3.5rem;
+    }
+}
+
+/*
+ * Main column and sidebar layout
+ */
+
+/* Sidebar modules for boxing content */
+
+.sidebar-module {
+    padding: 1rem;
+    /*margin: 0 -1rem 1rem;*/
+}
+
+.sidebar-module-inset {
+    padding: 1rem;
+    background-color: #f5f5f5;
+    border-radius: .25rem;
+}
+
+.sidebar-module-inset p:last-child,
+.sidebar-module-inset ul:last-child,
+.sidebar-module-inset ol:last-child {
+    margin-bottom: 0;
+}
+
+/* Pagination */
+
+.blog-pagination {
+    margin-bottom: 4rem;
+}
+
+.blog-pagination > .btn {
+    border-radius: 2rem;
+}
+
+/*
+ * Blog posts
+ */
+
+.blog-post {
+    margin-bottom: 4rem;
+}
+
+.blog-post-title {
+    margin-bottom: .25rem;
+    font-size: 2.5rem;
+}
+
+.blog-post-meta {
+    margin-bottom: 1.25rem;
+    color: #999;
+}
+
+/*
+ * Footer
+ */
+
+.blog-footer {
+    padding: 2.5rem 0;
+    color: #999;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-top: .05rem solid #e5e5e5;
+}
+
+.blog-footer p:last-child {
+    margin-bottom: 0;
+}
+
+#flash-message {
+    position: absolute;
+    z-index: 10;
+    bottom: 20px;
+    right: 20px;
+    -webkit-animation: flash-message 4s forwards;
+    animation: flash-message 4s forwards;
+}
+
+@-webkit-keyframes flash-message {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        display: none;
+    }
+}
+
+@keyframes flash-message {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        display: none;
+    }
+}
+
+
+
+
+
