@@ -31,25 +31,29 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Installing
 
-The app is built using Laravel PHP web framework. 
-Installation instructions are available [here:](https://laravel.com/docs/5.5/installation)
-You will also need a database. WampServer is a Windows web development environment.
-Installation instructions are available [here:](http://www.wampserver.com/en/download-wampserver-64bits/)
+- Clone the project
+- Open Command Prompt in the application folder
+- Run `composer install`
+- Copy `.env.example` file to `.env` in the app root folder. You can type `copy .env.example .env` if using Windows Command Prompt or `cp .env.example .env` if using Ubuntu terminal 
+- Open your `.env` file and change the database name `(DB_DATABASE)` to whatever you have, username `(DB_USERNAME)` and password `(DB_PASSWORD)` field correspond to your configuration. 
+   XAMPP: By default, username is root and you can leave password field empty. 
+   LAMP: By default, username is root and password is also root.
+   - If you want to, you can import `rad.sql` dummy database file
+- Run `php artisan key:generate`
+- Run `php artisan migrate`
 
 ### Deployment
 
-If you have PHP installed locally and you would like to use PHP's built-in development server to serve your application,
-you may use the <em>serve</em>  Artisan command. This command will start a development server at http://localhost:8000.
+- Run `php artisan serve`
+- Go to `localhost:8000`
 
 ## Built With
 
-* [Laravel](https://laravel.com/) - Web framework used
-* [WampServer](http://www.wampserver.com/en/) - Windows web development environment
-
+* [Laravel](https://laravel.com/) - PHP Web framework
 
 ## Author
 
-* [*Damjan Vučina* ](https://github.com/damjanvucina)
+* [Damjan Vučina](https://github.com/damjanvucina)
 
 ## License
 
